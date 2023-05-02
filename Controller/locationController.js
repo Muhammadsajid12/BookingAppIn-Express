@@ -81,7 +81,9 @@ try {
 
  if(!user){
     // throw new appError(INVALID_SUBSCRIPTION ,'subscription not found ' , 403)
+
   next( apiError.badRequest('Bad request'))
+  
  }
 
   if(req.file){
